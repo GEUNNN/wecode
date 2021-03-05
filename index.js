@@ -1,10 +1,12 @@
 let resultArray = [];
 
-const findEven = () => {
-    for (let i = 0; i < 26; i++) {
-        resultArray[i] = i * 2;
+const findEven = (num) => {
+  for (let num = 0; num < 50; num++) {
+    if (num % 2 === 0) {
+        resultArray.push(num)
+      }
     }
-  return resultArray;
+  return resultArray
 }
 
 findEven();
